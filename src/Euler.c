@@ -13,6 +13,7 @@ int main() {
 
     // Parameters
     char* meshPath = "NACA0012grids/2049x2049.x";
+    char* imagePath = "images/image.jpg";
     char* outputFile = "output/Flow.dat";
     int n_ghost_layers = 2;
 
@@ -20,6 +21,8 @@ int main() {
     float p_inf = 1.0;
     float M_inf = 0.3;
     float alpha = 5*PI/180.0;
+
+    display_image(imagePath);
 
     // 1. Read the mesh and compute geometrical quantities (normal, face lengths, cell volumes)
     MESH* MESH = LoadMESH(meshPath);

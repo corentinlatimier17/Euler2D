@@ -49,3 +49,10 @@ double getCellVolume(float* a, float* b)
 {
     return 0.5*fabs(a[0]*b[1]-a[1]*b[0]);
 }
+
+void display_image(const char *image_path) {
+    system("figlet  -w 100 Euler   2D   CFD  solver");
+    char command[256];  // Assurez-vous que la taille est suffisante pour le chemin
+    snprintf(command, sizeof(command), "jp2a --width=90 --height=35 --invert %s", image_path);
+    system(command);
+}
