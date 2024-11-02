@@ -12,7 +12,7 @@
 int main() {
 
     // Parameters
-    char* meshPath = "NACA0012grids/65x65.x";
+    char* meshPath = "NACA0012grids/2049x2049.x";
     char* outputFile = "output/Flow.dat";
     int n_ghost_layers = 2;
 
